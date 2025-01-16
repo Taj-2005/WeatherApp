@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>WeatherApp</title>
+</head>
+<body>
+    <nav>
+        <h1>WeatherApp</h1>
+        <form name="search" method="post">
+            <label for="location"></label>
+            <input id="location" name="location" type="text" placeholder="  Search Location......" onsubmit="return validateForm()">
+            <button id="submit" type="submit">
+                <i class="fas fa-search" style="color: #ffffff;"></i>
+            </button>
+        </form>
+    </nav>
+    <div class="stars">
+        <canvas>
+        </canvas>
+        <div id="weather">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>
