@@ -11,7 +11,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 50px;
+  height: 60px;
   background-color: black;
   border-bottom: 5px solid rgb(255, 204, 0);
 }
@@ -20,15 +20,43 @@ nav h1{
   color: white;
   margin-left: 15px;
 }
+nav i {
+  position: relative;
+}
+nav i:hover {
+  position: static;
+}
+nav button:hover{
+  background-color: grey;
+}
 nav button{
   background-color: black;
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   font-size:x-large;
-  margin-right: 15px;
+  border:5px solid #000;
 }
-nav input{
+#weatherForm{
+  display: flex;
+  width: 35vw;
+  margin-right: 10px;
+}
+#searchbars{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30vw;
+  justify-content: flex-end;
+}
+#location{
   height: 25px;
   width: 30vw;
+  border-radius: 1000px;
+}
+#nation{
+  height: 25px;
+  width: 10vw;
   border-radius: 1000px;
 }
 .stars {

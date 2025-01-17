@@ -10,10 +10,14 @@
 <body>
     <nav>
         <h1>WeatherApp</h1>
-        <form>
-            <label for="location"></label>
-            <input id="location" name="location" type="text" placeholder="  Search Location......" required>
-            <button id="submit" type="submit">
+        <form id="weatherForm">
+                <div id="searchbars">
+                    <label for="location"></label>
+                    <input id="location" name="location" type="text" placeholder="Enter City" required>
+                    <label for="nation"></label>
+                    <input id="nation" name="nation" type="text" placeholder="Enter Country Code" required>
+                </div>
+            <button id="submit" onclick="getWeather()" type="button">
                 <i class="fas fa-search" style="color: #ffffff;"></i>
             </button>
         </form>
